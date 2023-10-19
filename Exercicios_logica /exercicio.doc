@@ -1,0 +1,35 @@
+Maior número:
+Peça ao usuário para inserir dois números.
+Determine e exiba qual dos números é o maior.
+
+Positivo ou Negativo:
+Peça ao usuário para inserir um número.
+Determine se o número é positivo, negativo ou zero.
+
+Número Par:
+Peça ao usuário para inserir um número.
+Determine se o número é par ou ímpar.
+
+Múltiplo de 5:
+Peça ao usuário para inserir um número.
+Determine se o número é múltiplo de 5.
+
+Comparação de Números:
+Peça ao usuário para inserir três números.
+Determine e exiba o menor número.
+
+Dobro do Número:
+Peça ao usuário para inserir um número.
+Exiba o dobro desse número.
+
+Diferença entre Números:
+Peça ao usuário para inserir dois números.
+Exiba a diferença entre eles.
+
+Idade:
+Peça ao usuário para inserir sua idade.
+Determine se o usuário é maior ou menor de idade.
+
+Divisível por 3:
+Peça ao usuário para inserir um número.
+Determine se o número é divisível por 3.
