@@ -8,10 +8,12 @@
 <body>
     <script>
         var notas = Number(prompt("Digite sua nota"))
-        if(notas > 0 >= 100){
-            alert("Aprovado sua media é:" +notas)
-        }else if (notas < 0 <= 50){
-            alert("Reprovado sua media é:" +notas)
+        if(notas >= 60 && notas <= 100){
+            alert(`Aprovado, sua média é: ${notas}`)
+        }else if (notas >= 30 && notas <= 59){
+            alert(`Recuperação, sua média é: ${notas}`)
+        }else{
+            alert(`Reprovado, sua média é: ${notas}`);
         }
             
         
