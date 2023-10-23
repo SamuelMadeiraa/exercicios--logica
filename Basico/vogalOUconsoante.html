@@ -6,15 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        const vogal = [a,e,i,o,u]
-        const consoante = [b,c,d,f,g,h,j,k,l,n,m,,p,q,r,s,t,u,x,y,z]
+    <script>//quando for atribuir valores string a um array, certfique-se de colocar-los entre algum tipo de aspas.
+        const vogal = ['a','e','i','o','u']
+        const consoante = ['b','c','d','f','g','h','j','k','l','n','m','n','p','q','r','s','t','u','x','y','z']
 
-        const vogalInserido = prompt("Digite uma vogal")
-        const consoanteInserido = prompt("Digite uma vogal")
-        if(vogal != consoante){
-            alert(vogal + "Essa letra e uma vogal !!")
-        }else alert(consoante + "Essa letra e uma consoante !!")
+        const Inserido = prompt("Digite uma letra do alfabeto")
+        
+        if(Inserido == consoante){
+            alert(Inserido + " Essa letra e uma vogal !!")
+        }else{ 
+            alert(Inserido + " Essa letra e uma consoante !!")
+        }
 
     </script>
 </body>
