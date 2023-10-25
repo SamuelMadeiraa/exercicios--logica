@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opcoesCalculadora = Number(prompt("Escolha uma opção:\n1. Adição\n2. Subtração\n3. Multiplicação\n4. Divisão"))
+        let numero = Number(prompt("Digite um Numero:"))
+        let numero1 = Number(prompt("Digite outro Numero:"))
+        let opcoes = Number(opcoesCalculadora)
+        let resultadoAdição = numero + numero1;
+        let resultadoSubtração = numero - numero1;
+        let resultadoMultiplicação = numero * numero1;
+        let resultadoDivisão = numero / numero1;
+       
+
+        switch(opcoes){
+            case 1:
+                alert(`A Soma entre ${numero} e ${numero1} é: ${resultadoAdição}`);
+                break;
+            case 2:
+                alert(`A Subtração Entre ${numero} e ${numero1} é: ${resultadoSubtração}`);
+                break;
+            case 3:
+                alert(`A Multiplicação Entre ${numero} e ${numero1} é: ${resultadoMultiplicação}`);
+                break;
+            case 4:
+                alert(`A Divisão Entre ${numero} e ${numero1} é: ${resultadoDivisão.toFixed(3)}`);
+                break;
+                default:
+                    alert("Invalido!!")          
+            
+
+        }
+    </script>
+</body>
+</html>
