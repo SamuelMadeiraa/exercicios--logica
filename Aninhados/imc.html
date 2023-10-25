@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       var altura =Number(prompt("Digite sua altura:"));
+        var peso =Number(prompt("Digite Seu peso:"))
+
+        
+        var valor_imc = peso / (altura * altura);
+        alert(`Seu IMC é ${valor_imc}`)
+        if(valor_imc <= 18,5){
+            alert(`Baixo do peso ${valor_imc.toFixed(2)}`)
+        }else if(valor_imc >= 18,5 && valor_imc <= 24,99){
+            alert(`Normal ${valor_imc}`)
+        }else if(valor_imc >= 25 && valor_imc <= 29,99){
+            alert(`Sobrepesso ${valor_imc}`)
+        }else{
+            alert(`Obsesidade ${valor_imc}`)
+        }
+
+        
+    </script>
+</body>
+</html>
