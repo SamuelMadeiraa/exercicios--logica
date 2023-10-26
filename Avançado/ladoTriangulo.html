@@ -7,24 +7,30 @@
 </head>
 <body>
     <script>
-     let perimetro=Number(prompt("Qual o Perimetro Triangulo?"))
-     let area=Number(prompt("Qual é a Area do Triangulo?"))
-     let base=Number(prompt("Qual é a Base Triangulo?"))
-     let altura=Number(prompt("Qual é a altura do Triangulo?"))
- 
-     if(perimetro=area+base+altura/2){
-        (`O semi-perimentro é: ${perimetro,area,base,altura}`)
-        if(area=Math.sqrt(perimetro*(perimetro-area)*(perimetro-base)*(perimetro-altura))){
-
-        }
-     }
+const angulo1 = Number(prompt("Insira o primeiro ângulo do triângulo:"));
+const angulo2 = Number(prompt("Insira o segundo ângulo do triângulo:"));
+const angulo3 = Number(prompt("Insira o terceiro ângulo do triângulo:"));
 
 
 
+if (
+  angulo1 > 0 &&
+  angulo2 > 0 &&
+  angulo3 > 0 &&
+  somaDosAngulos === 180
+) {
+  
+  if (angulo1 < 90 && angulo2 < 90 && angulo3 < 90) {
+    console.log("Os ângulos formam um triângulo agudo.");
+  } else if (angulo1 === 90 || angulo2 === 90 || angulo3 === 90) {
+    console.log("Os ângulos formam um triângulo retângulo.");
+  } else {
+    console.log("Os ângulos formam um triângulo obtuso.");
+  }
+} else {
+  console.log("Os ângulos inseridos não formam um triângulo válido.");
+}
 
-    
-    
-    
     </script>
 </body>
 </html>
