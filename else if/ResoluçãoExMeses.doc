@@ -1,0 +1,69 @@
+1 passo = criar um array para armazenar os meses que contenham 30 dias e 31 
+2 passo = criar uma funcao que possa chamar esse array que armazenam os meses que vão ate 30 
+3 passo criar uma laço de repetição para verificar os dias do mes Ex: if(maio === 30 ele tem 30 dias)else(maio >= 30 ele nao faz parte grupo1 dos meses com 30 dias)
+4 passo criar um algarismo de verificação para verificar qual os meses que contenham 30 e 31 dias
+5 passo chamar ou converter esse algarismo e uma funçao 
+6 passo criar uma repetiçao com do while 
+7 fazer uma conversao de numero para string se for neccesario
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function calcularDigitoVerificacao(numero) {
+    // Converte o número para uma string para facilitar a manipulação dos dígitos
+    const numeroStr = numero.toString();
+
+    // Inicializa uma variável para acompanhar a soma
+    let soma = 0;
+
+    // Inicializa uma variável para alternar entre multiplicar por 2 e 1
+    let multiplicador = 2;
+
+    // Percorre os dígitos do número da direita para a esquerda
+    for (let i = numeroStr.length - 1; i >= 0; i--) {
+        let digito = parseInt(numeroStr[i], 10);
+
+        // Multiplica o dígito pelo multiplicador (2 ou 1)
+        let resultadoParcial = digito * multiplicador;
+
+        // Se o resultado for maior que 9, subtrai 9
+        if (resultadoParcial > 9) {
+            resultadoParcial -= 9;
+        }
+
+        // Adiciona o resultado parcial à soma
+        soma += resultadoParcial;
+
+        // Alterna entre multiplicar por 2 e 1
+        multiplicador = multiplicador === 2 ? 1 : 2;
+    }
+
+    // Calcula o dígito de verificação
+    const digitoVerificacao = (10 - (soma % 10)) % 10;
+
+    return digitoVerificacao;
+}
+
+// Exemplo de uso
+const numero = 1234567;
+const digitoVerificacao = calcularDigitoVerificacao(numero);
+console.log("Número original: " + numero);
+console.log("Dígito de verificação: " + digitoVerificacao);
